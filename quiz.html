@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NBA Quiz</title>
+    <style>
+    .hide { visibility: hidden; opacity: 0.0;}
+    </style>
+  </head>
+   
+  <body>
+
+    <div class="timer">Time: <span id="time">0</span></div>
+    <div class="score">Score: <span id="score">0</span></div>
+
+   
+      <div id="start-screen" class="start">
+        <h1>NBA Quiz</h1>
+        <p>
+         Good Luck!!!
+        </p>
+        <button id="start">Start Quiz</button>
+      </div> 
+
+      <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <div id="answers" class="answers"></div>
+      </div>
+
+      <div id="end-screen" class="hide">
+        <h2>Done!</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+      </div>
+
+    <script src="questions.js"></script>
+    <script src="./logic.js"></script>
+  </body>
+</html>
